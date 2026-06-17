@@ -6,7 +6,7 @@ Build tool for open.mp gamemode development.
 
 ### 1. Download
 
-Tải bản mới nhất từ [Releases](https://github.com/aujiz11/omp-starter/releases):
+Download the latest version from [Releases](https://github.com/aujiz11/omp-starter/releases):
 
 ```
 omp-starter-vX.Y.Z.zip
@@ -26,7 +26,7 @@ omp-starter-vX.Y.Z.zip
 
 ```bash
 mkdir my-server && cd my-server
-# giải nén omp-starter.zip vào đây
+# extract omp-starter.zip here
 server install
 ```
 
@@ -34,13 +34,13 @@ server install
 
 ```bash
 cd your-project
-# giải nén omp-starter.zip vào đây (server.bat + tools/)
+# extract omp-starter.zip here (server.bat + tools/)
 server install
 ```
 
 ### 3. Code
 
-Tạo `gamemodes/main.pwn`:
+Create `gamemodes/main.pwn`:
 
 ```c
 #include <open.mp>
@@ -78,7 +78,7 @@ server build-and-run [-Release]
 
 ### install
 
-Tải open.mp server từ GitHub, giải nén vào project. Không ghi đè custom files.
+Download open.mp server from GitHub and extract into project. Does not overwrite custom files.
 
 ```bash
 server install                   # latest
@@ -87,7 +87,7 @@ server install 1.5.8.3079        # specific version
 
 ### build
 
-Biên dịch Pawn gamemode. Mặc định build toàn bộ `.pwn` trong `gamemodes/` + `filterscripts/`.
+Compile Pawn gamemode. By default, builds all `.pwn` files in `gamemodes/` + `filterscripts/`.
 
 ```bash
 server build                                  # build all
@@ -100,7 +100,7 @@ server build -File "gamemodes\custom.pwn"     # arbitrary path
 
 ### run
 
-Khởi động omp-server. Tự động kill process cũ nếu đang chạy.
+Start omp-server. Automatically kills the previous server process if running.
 
 ```bash
 server run                # foreground (Ctrl+C to stop)
@@ -109,7 +109,7 @@ server run -Window        # separate window
 
 ### build-and-run
 
-Build rồi chạy.
+Build then run.
 
 ```bash
 server build-and-run
@@ -118,7 +118,7 @@ server build-and-run -Release
 
 ## Auto-detect
 
-Tool tự động tìm:
+Auto-detects:
 
 - `pawncc.exe` in `qawno/`, root, or PATH
 - `omp-server.exe` in root, `server/`, or `bin/`
