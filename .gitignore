@@ -1,0 +1,17 @@
+omp-server.exe
+*.dll
+*.pdb
+*.amx
+config.json
+log.txt
+bans.json
+
+components/
+plugins/
+scriptfiles/
+filterscripts/
+models/
+gamemodes/
+qawno/
+npcmodes/
+.vscode/
